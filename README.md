@@ -11,7 +11,7 @@ git clone https://github.com/ultralytics/ultralytics.git
 
 2. Затем установите требуемые библиотеки
 ```
-cd ultralytics; pip install -r requirements.txt
+pip install -r ultralytics/requirements.txt
 ```
 
 3. Установите модуль `ultralytics` через pip
@@ -21,13 +21,13 @@ pip install ultralytics
 
 # Запуск API
 
-1. Установите модуль `flask` через pip
+1. Установите модуль `fastapi` через pip
 ```
-pip install flask
+pip install fastapi[all]
 ```
 
 2. Запустите API, задав файл с исходным кодом приложения
 ```
-flask --app api.py run
+uvicorn api:app --reload
 ```
 
